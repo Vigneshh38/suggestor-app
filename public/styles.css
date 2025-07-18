@@ -20,7 +20,7 @@ body {
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-    background-image: url('/image.png'); /* Absolute path from root */
+    background-image: url('img/image.png'); /* Absolute path from root */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
