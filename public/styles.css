@@ -1,0 +1,129 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;      /* Set desired width */
+    height: 300px;     /* Set desired height */
+    background: url('/college.jpg') top left/contain no-repeat;
+    opacity: 1;      /* Adjust as needed */
+    pointer-events: none;
+    z-index: 1;
+    top: 5px;
+    left: 5px;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    background-image: url('/image.png'); /* Absolute path from root */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+.question {
+    margin: 15px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.question h3 {
+    margin: 0 0 10px;
+    color: #444;
+}
+
+.option {
+    margin: 8px 0;
+}
+
+.option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.option label {
+    cursor: pointer;
+    color: #555;
+}
+
+.option:hover {
+    background: #e6f3ff;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#submit-btn:hover:not(:disabled) {
+    background: #0056b3;
+}
+
+#result-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e6f3ff;
+    border-radius: 5px;
+}
+
+#result {
+    text-align: center;
+}
+
+#result h3 {
+    color: #007bff;
+    margin: 10px 0;
+}
+
+#error-message {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+}
